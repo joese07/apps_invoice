@@ -1,4 +1,5 @@
-import './globals.css'
+import "./globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function RootLayout({ children }) {
   return (
@@ -10,5 +11,5 @@ export default function RootLayout({ children }) {
       <head />
       <body>{children}</body>
     </html>
-  )
+  );
 }
