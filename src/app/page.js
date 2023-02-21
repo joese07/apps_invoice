@@ -552,9 +552,9 @@ export default function Home() {
                   <span>Terbilang : {angkaTerbilangJs(total)} rupiah</span>
                 </div>
                 <div className="d-flex justify-content-end">
-                  <PDFViewer>
+                  {/* <PDFViewer>
                     <MyDocument />
-                  </PDFViewer>
+                  </PDFViewer> */}
                   {/* <PDFDownloadLink document={<MyDocument />} fileName="Invoice">
                     {({ loading }) =>
                       loading ? (
