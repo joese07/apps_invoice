@@ -7,6 +7,7 @@ import {
   Document,
   Page,
   PDFDownloadLink,
+  PDFViewer,
   StyleSheet,
   Text,
   View,
@@ -551,7 +552,10 @@ export default function Home() {
                   <span>Terbilang : {angkaTerbilangJs(total)} rupiah</span>
                 </div>
                 <div className="d-flex justify-content-end">
-                  <PDFDownloadLink document={<MyDocument />} fileName="Invoice">
+                  <PDFViewer>
+                    <MyDocument />
+                  </PDFViewer>
+                  {/* <PDFDownloadLink document={<MyDocument />} fileName="Invoice">
                     {({ loading }) =>
                       loading ? (
                         <button className="btn btn-danger btn-sm">
@@ -563,7 +567,7 @@ export default function Home() {
                         </button>
                       )
                     }
-                  </PDFDownloadLink>
+                  </PDFDownloadLink> */}
                 </div>
               </div>
             </div>
